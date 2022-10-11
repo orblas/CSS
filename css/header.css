@@ -1,0 +1,163 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    object-fit: cover;
+}
+body{
+    overflow-x: hidden; 
+}
+
+
+:root{
+    --primary-color:#eb5757;
+    --second-color:#222;
+    --light-color:#f9f9f9;
+    --dark-color:#333;
+}
+
+header{
+    width: 100vw;
+    height: 150px;
+    position: fixed;
+    background-color: var(--primary-color); 
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header section{
+    width: 0px;
+    margin-bottom: 3px;
+}
+
+header .contenedores h4 {
+    margin-top: 10px;
+}
+
+header .contenedores{
+    width: 100%;
+    margin: auto;
+}
+
+header .covid{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-color);
+    gap: 10px;
+    background-color: var(--second-color);
+}
+
+header .covid button{
+    width: 140px;
+    height: 35px;
+    border-radius: 18px;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+header .covid h4{
+    color: var(--light-color);
+    font-size: 12px;
+}
+
+
+header .covid p{
+    font-size: 18px;
+    float: left;
+}
+
+header .menu{
+    width: 100vw;
+    height: 75px;
+    padding: 0 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-color);
+}
+
+header .menu div{
+    width: 600px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu div a{
+    height: 35px;
+    width: 75px;
+    padding-top: 8px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--light-color);
+    display: inline-block;
+    transition: all 0.3s ease-in;
+}
+
+header .menu div a:hover{
+    background-color: var(--dark-color);
+}
+
+header .menu button{
+    width: 45px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--second-color);
+    background-image: url(../img/carrito.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    border: none;
+    position: relative;
+}
+
+header .menu div button span{
+    width: 20px;
+    height: 2px;
+    padding-top: 2px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    text-align: center;
+    background-color: var(--light-color);
+}
+
+section{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+@media (max-width:480px){
+
+    body{
+        overflow-x: hidden; 
+    }
+    
+
+    header .contenedores{
+        width: 100%;
+        margin: auto;
+    }
+
+    header .covid{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--light-color);
+        gap: 10px;
+        background-color: var(--second-color);
+    }
+
+}

@@ -1,0 +1,17 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div{
+    font-size: 30px;
+    transition: all 1s ease-in;
+}
+
+.exito{
+    background-color: rgb(155, 254, 154);
+}
+
+.fallo{
+    background-color: rgb(255, 165, 155);
+}
